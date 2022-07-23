@@ -152,6 +152,19 @@ body {
   color: var(--primary-text-color);
 }
 
+.contact-link-icon {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.contact-link-icon:hover,
+.contact-link-icon:focus {
+  fill: currentColor;
+}
+
 .contact-text {
   font-style: normal;
   font-weight: 500;
@@ -171,7 +184,10 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-color: var(--primary-bcg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/Img-hero.jpg);
+  background-color: #c4c4c4;
+  background-size: cover;
 }
 
 .hero-title {
@@ -288,6 +304,26 @@ body {
   line-height: 1.19;
   text-align: center;
   color: var(--secondary-text-color);
+}
+
+/* ======================================= CLIENTS =========================================*/
+
+.clients-list {
+  display: flex;
+}
+
+.clients-item {
+  width: 170px;
+  height: 92px;
+  left: 215px;
+  top: 2490px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /*======================================== FOOTER ========================================*/
