@@ -2,7 +2,7 @@
   --primary-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
   --primary-font-size: 16px;
-  /* --secondary-font-size: 14px; */
+  --secondary-font-size: 14px;
   --primary-font-weight: 700;
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
@@ -118,10 +118,6 @@ body {
   margin-left: 50px;
 }
 
-.contact-text {
-  padding: 15px 0;
-}
-
 .logo-link-header {
   margin-right: 93px;
   font-family: var(--secondary-font);
@@ -166,6 +162,9 @@ body {
 }
 
 .contact-text {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
   font-style: normal;
   font-weight: 500;
   font-size: var(--secondary-font-size);
@@ -223,6 +222,27 @@ body {
 }
 
 /* ========================================= PLUS =========================================*/
+.plus-list-icon {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.plus-item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-bcg);
+}
+
+.plus-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .plus-list {
   display: flex;
   justify-content: space-between;
@@ -300,10 +320,41 @@ body {
 }
 
 .team-speciality {
+  margin-bottom: 16px;
   font-size: var(--primary-font-size);
   line-height: 1.19;
   text-align: center;
   color: var(--secondary-text-color);
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-list-icon {
+  fill: #afb1b8;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--thirty-text-color);
 }
 
 /* ======================================= CLIENTS =========================================*/
@@ -312,14 +363,34 @@ body {
   display: flex;
 }
 
+.clients-list-icon {
+  fill: #afb1b8;
+}
+
+.clients-list-link:hover .clients-list-icon,
+.clients-list-link:focus .clients-list-icon {
+  fill: var(--accent-color);
+}
+
 .clients-item {
   width: 170px;
   height: 92px;
-  left: 215px;
-  top: 2490px;
+}
 
+.clients-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--link-client-color);
+  width: 100%;
+  height: 100%;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border: 1px solid var(--accent-color);
 }
 
 .clients-item:not(:last-child) {
@@ -331,6 +402,11 @@ body {
 .footer {
   background-color: var(--primary-bcg);
   padding: 60px 0;
+}
+
+.footer-flex {
+  display: flex;
+  align-items: baseline;
 }
 
 .logo-footer {
@@ -358,6 +434,37 @@ body {
   font-size: var(--secondary-font-size);
   line-height: 1.71;
   color: var(--thirty-text-color);
+}
+
+.footer-join {
+  margin-left: 70px;
+}
+
+.join-title {
+  margin-bottom: 20px;
+  font-size: var(--secondary-font-size);
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.social-list-icon-dark-theme {
+  fill: #ffffff;
+}
+
+.social-list-link-dark-theme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.social-list-link-dark-theme:hover,
+.social-list-link-dark-theme:focus {
+  background-color: var(--accent-color);
 }
 
 /* =====================================OUR PORTFOLIO ===================================== */
