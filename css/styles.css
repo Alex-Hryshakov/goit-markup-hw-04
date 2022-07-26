@@ -97,7 +97,6 @@ body {
 }
 
 .header {
-  padding: 24px 0;
   border: 1px solid #ececec;
 }
 
@@ -143,7 +142,7 @@ body {
 }
 
 .menu-link {
-  padding: 15px 0;
+  padding: 32px 0;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -187,6 +186,10 @@ body {
     url(../images/Img-hero.jpg);
   background-color: #c4c4c4;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -233,15 +236,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  /* width: 270px; */
   height: 120px;
   background-color: var(--secondary-bcg);
-}
-
-.plus-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-bottom: 30px;
 }
 
 .plus-list {
@@ -373,18 +371,14 @@ body {
   fill: var(--accent-color);
 }
 
-.clients-item {
+.clients-list-link {
   width: 170px;
   height: 92px;
-}
-
-.clients-list-link {
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--link-client-color);
-  width: 100%;
-  height: 100%;
+
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
 }
@@ -532,10 +526,20 @@ body {
   flex-basis: calc((100% - 60px) / 3);
 }
 
-.portfolio-examples-item:hover {
+.portfolio-examles-links {
+  display: block;
+}
+
+.portfolio-examles-links:hover,
+.portfolio-examles-links:focus {
   box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
     1px 4px 6px rgb(0 0 0 / 16%);
 }
+
+/* .portfolio-examples-item:hover {
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
+    1px 4px 6px rgb(0 0 0 / 16%);
+} */
 
 .portfolio-examples-list {
   display: flex;
@@ -550,6 +554,7 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: #212121;
 }
 
 .portfolio-examples-text {
